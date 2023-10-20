@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+function send() {
+const url = 'http://localhost:8080/defaut';
+fetch(url)
+.then(response => {
+document.getElementById("responsestatus").innerHTML = response.status;
+response.text().then(response => {
+document.getElementById("responsetexte").innerHTML = response;
+})
+})
+.catch(error => alert("Erreur : " + error));
+}
+</script>
+<title>Page de test getdefaut1.html</title>
+</head>
+<body id='bod'>
+	<p>
+		<button type="submit" onclick="javascript:send();">Exécution</button>
+	</p>
+	<p>
+	<div id='responsestatus'></div>
+	</p>
+	<p>
+	<div id='responsetexte'></div>
+</body>
+</html>
