@@ -15,7 +15,7 @@ const parametres = {
 	'Content-Type':'application/json'
 	}
 };
-const url = 'http://localhost:8080/deljson';
+const url = 'http://localhost:8080/api/deljson';
 fetch(url,parametres)
 .then(response => {
 	document.getElementById("responsestatus").innerHTML = response.status;

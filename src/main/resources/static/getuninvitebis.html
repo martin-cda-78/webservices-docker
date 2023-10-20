@@ -6,7 +6,7 @@
 function send() {
 var n=document.getElementById('nom').value;
 var p=document.getElementById('prenom').value;
-const url = new URL('http://localhost:8080');
+const url = new URL('http://localhost:8080/api');
 var params = url.searchParams;
 params.append('nom',n);
 params.append('prenom',p);

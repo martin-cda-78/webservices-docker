@@ -5,7 +5,7 @@
 <script type="text/javascript">
 function send() {
 var nom=document.getElementById('nom').value;
-const url = 'http://localhost:8080/'+nom;
+const url = 'http://localhost:8080/api'+nom;
 fetch(url)
 	.then(response=> {
 		document.getElementById("responsestatus").innerHTML = response.status;

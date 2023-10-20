@@ -16,7 +16,7 @@ const parametres = {
 	'Content-Type':'application/json'
 	}
 };
-const url = 'http://localhost:8080/ajoutejson';
+const url = 'http://localhost:8080/api/ajoutejson';
 fetch(url,parametres)
 .then(response => {
 	document.getElementById("responsestatus").innerHTML = response.status;
